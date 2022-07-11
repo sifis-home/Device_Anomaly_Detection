@@ -16,6 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build -f Dockerfile.txt -t device_anomaly_detection .
+      run: docker build -t device_anomaly_detection .
     - name: Run the Docker image
       run: docker run -ti device_anomaly_detection
