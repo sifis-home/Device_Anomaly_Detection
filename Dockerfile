@@ -1,5 +1,6 @@
 FROM python:3.7.6
-ENV PYTHONPATH=${PYTHONPATH}:${PWD} 
+ENV PYTHONPATH=${PYTHONPATH}:${PWD}
+RUN python -m pip install --upgrade pip
 RUN pip install poetry
 RUN pip install pillow==9.2.0
 

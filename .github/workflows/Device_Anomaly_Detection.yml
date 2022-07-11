@@ -18,4 +18,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t device_anomaly_detection .
     - name: Run the Docker image
-      run: docker run -ti device_anomaly_detection
+      run: docker run -t device_anomaly_detection
