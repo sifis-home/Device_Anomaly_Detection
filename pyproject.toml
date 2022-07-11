@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "Device_Anomaly_Detection"
+version = "0.1.0"
+description = ""
+authors = ["WisamAbbasi <39978331+WisamAbbasi@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7.6,<3.11"
+protobuf = ">=3.9.2,<3.20"
+pip = "22.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+tensorflow = "2.9.1"
+tensorflow-privacy = "0.8.0"
+plotly = "4.14.3"
+pandas = "1.1.5"
+numpy = "1.21.5"
+seaborn = "0.11.1"
+coverage = {extras = ["toml"], version = "^6.4.1"}
+flake8 = "^4.0.1"
+flake8-bugbear = "^22.4.25"
+pre-commit = "^2.19.0"
+pylint= "2.14.1"
+isort = "^5.10.1"
+black = "22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "pip>=22.1.2"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.pylint.master]
+jobs = 0
+
+[tool.pylint.basic]
+good-names = [
+    "ex","_","w","h","i","j","x","y","x1","x2","y1","y2"
+]
+
+[tool.pylint.format]
+max-line-length = 79
+
+[tool.pylint.messages_control]
+reports = false
+disable = [
+    "import-error",
+    "missing-docstring",
+    "unused-argument",
+    "duplicate-code",
+    "too-many-return-statements",
+    "too-many-arguments",
+    "too-many-locals",
+    "too-many-instance-attributes",
+    "too-many-public-methods",
+    "too-few-public-methods",
+]
+
+[tool.pylint.miscellaneous]
+notes = ["FIXME", "TODO"]

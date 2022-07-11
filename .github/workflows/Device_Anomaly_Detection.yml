@@ -1,0 +1,21 @@
+
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build -f Dockerfile.txt -t device_anomaly_detection .
+    - name: Run the Docker image
+      run: docker run -ti device_anomaly_detection
