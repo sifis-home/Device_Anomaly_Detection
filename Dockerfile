@@ -15,7 +15,8 @@ COPY dp_final_of_ibrl_dataset_anomaly_detection_temp.py /device_anomaly_detectio
 COPY final_of_ibrl_dataset_anomaly_detection_humidity.py /device_anomaly_detection
 COPY final_of_ibrl_dataset_anomaly_detection_temp.py /device_anomaly_detection
 COPY main.py /device_anomaly_detection
-COPY data.txt /device_anomaly_detection
+COPY data.txt.zip /device_anomaly_detection
+RUN unzip data.txt.zip
 
 CMD \ 
 	poetry run black --check . ; \

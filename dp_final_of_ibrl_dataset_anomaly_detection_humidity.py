@@ -36,10 +36,10 @@ data.rename(
 data = data.sort_values(["date", "time"], ascending=[1, 1])
 print(data.head())
 
-# print(data["epochId"].unique())
+print(data["epochId"].unique())
 
-# for item in data["moteId"].unique():
-    # print(item)
+for item in data["moteId"].unique():
+    print(item)
 
 for key, d in data.groupby("moteId"):
     print(key, "\n", d.head())
