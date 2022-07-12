@@ -1,5 +1,6 @@
 .pytest_cache/
 __pycache__/
+device_anomaly_detection/
 dist/
 tests/
 data.txt

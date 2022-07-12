@@ -10,7 +10,6 @@ COPY pyproject.toml /device_anomaly_detection
 RUN poetry config virtualenvs.create false
 RUN poetry install
 
-COPY device_anomaly_detection /device_anomaly_detection
 COPY dp_final_of_ibrl_dataset_anomaly_detection_humidity.py /device_anomaly_detection
 COPY dp_final_of_ibrl_dataset_anomaly_detection_temp.py /device_anomaly_detection
 COPY final_of_ibrl_dataset_anomaly_detection_humidity.py /device_anomaly_detection
