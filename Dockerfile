@@ -7,7 +7,7 @@ RUN pip install pillow==9.2.0
 WORKDIR /device_anomaly_detection
 COPY pyproject.toml /device_anomaly_detection
 
-COPY tests/ /device_anomaly_detection
+COPY tests /device_anomaly_detection
 
 RUN poetry config virtualenvs.create false
 RUN poetry install
