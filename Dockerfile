@@ -16,8 +16,8 @@ COPY final_of_ibrl_dataset_anomaly_detection_humidity.py /device_anomaly_detecti
 COPY final_of_ibrl_dataset_anomaly_detection_temp.py /device_anomaly_detection
 COPY main.py /device_anomaly_detection
 
-RUN wget http://db.csail.mit.edu/labdata/data.txt.gz
-RUN unzip data.txt.zip
+RUN curl -LO http://db.csail.mit.edu/labdata/data.txt.gz
+RUN gzip -dv data.txt.gz
 
 CMD \ 
 	poetry run black --check . ; \
