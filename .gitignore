@@ -2,5 +2,4 @@
 __pycache__/
 device_anomaly_detection/
 dist/
-tests/
 data.txt
