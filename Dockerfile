@@ -22,6 +22,5 @@ CMD \
 	poetry run black --check . ; \
 	poetry run pylint . ; \
 	poetry run isort --check --diff . ; \ 
-	poetry run flake8 ; \ 
-	poetry run pytest ; \ 
+	poetry run flake8 ; \
 	poetry run coverage run -m pytest main.py && poetry run coverage report -m
