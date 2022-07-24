@@ -11,3 +11,11 @@ The used dataset is Intel Berkeley Research Lab Sensor (IBRL) Dataset (http://db
 - **Second File "final_of_ibrl_dataset_anomaly_detection_(humidity).py"**: For humidity anomaly detection using an autoencoder network with differential privacy.
 - **Third File "dp_final_of_ibrl_dataset_anomaly_detection_(temp).py"**: For temperature anomaly detection using a normal autoencoder network.
 - **Fourth File "dp_final_of_ibrl_dataset_anomaly_detection_(humidity).py"**: For humidity anomaly detection using an autoencoder network differential privacy.
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+This software has been developed in the scope of the H2020 project SIFIS-Home with GA n. 952652.
